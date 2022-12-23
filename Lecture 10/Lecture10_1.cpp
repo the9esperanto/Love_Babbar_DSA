@@ -31,6 +31,10 @@ void unique(int array[], int size)
 
         for (int j = (0); j < (size - 1); j++)
         {
+            if (i == j)
+            {
+                continue;
+            }
             flag = 0;
 
             if (array[i] == array[j])
