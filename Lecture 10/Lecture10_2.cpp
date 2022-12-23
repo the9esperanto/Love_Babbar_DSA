@@ -1,4 +1,5 @@
-// Find unique Love Babbar's approach
+// Find unique Love Babbar's not so good approach
+// This can be done by map so do it later when you learn map.
 
 void input(int array[], int size)
 {
@@ -6,6 +7,10 @@ void input(int array[], int size)
     {
         cin >> array[i];
     }
+}
+
+void unique(int array[], int size)
+{
 }
 
 #include <iostream>
