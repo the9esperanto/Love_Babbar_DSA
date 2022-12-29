@@ -1,4 +1,5 @@
 // Love Babbar's approach
+// First and last occurence
 
 #include <iostream>
 #include <iomanip>
