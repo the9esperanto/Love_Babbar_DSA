@@ -1,4 +1,5 @@
 // Love Babbars Approach
+// He just brings the start and end closer until they are the same.
 #include <iostream>
 #include <iomanip>
 using std::cin;
