@@ -1,6 +1,8 @@
 // Observation: when the value of mid to high is increasing then the position of pivot is less than mid. And when the value of mid to high is decreasing then the position of pivot is high than mid.
 // With two cases
 
+// This only works if a sorted array is rotated.
+
 #include <iostream>
 #include <iomanip>
 using std::cin;
