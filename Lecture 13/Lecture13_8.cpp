@@ -1,5 +1,6 @@
 // Observation: when the value of mid to high is increasing then the position of pivot is less than mid. And when the value of mid to high is decreasing then the position of pivot is high than mid.
-// With three cases
+// With two cases
+
 #include <iostream>
 #include <iomanip>
 using std::cin;
@@ -20,23 +21,20 @@ int pivot(int array[], int size)
     int end = size - 1;
     int mid = start + ((end - start) / 2);
 
-    while (start <= end)
+    while (start < end)
     {
-        if (array[mid] < array[mid - 1] && array[mid] < array[mid + 1])
+        if (array[mid] < array[end])
         {
-            return (mid);
-        }
-        else if (array[mid] > array[mid + 1])
-        {
-            start = mid;
+            end = mid;
         }
         else
         {
-            end = mid;
+            start = mid + 1;
         }
 
         mid = start + ((end - start) / 2);
     }
+    return end;
 }
 
 int main()
