@@ -3,6 +3,8 @@
 
 // This only works if a sorted array is rotated.
 
+// Have clarity about when to put mid and (mid - 1).
+
 #include <iostream>
 #include <iomanip>
 using std::cin;
