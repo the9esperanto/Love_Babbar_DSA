@@ -24,7 +24,7 @@ int getPivot(int array[], int size)
         }
         else
         {
-            end = mid - 1;
+            end = mid;
         }
         mid = start + ((end - start) / 2);
     }
