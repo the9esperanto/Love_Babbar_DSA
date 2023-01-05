@@ -25,7 +25,9 @@ bool hone_ke_chances(int arr[], int n, int m, int curr_min)
                 return false;
         }
         else
+        {
             current_sum_of_values += arr[i];
+        }
     }
     return true;
 }
@@ -63,12 +65,20 @@ int finding_my_Pages(int arr[], int n, int m)
 
 int main()
 {
-    int arr[] = {10, 20, 30, 40};
-    int n = sizeof arr / sizeof arr[0];
-    int m = 3;
+    int size;
+    cin >> size;
+    int array[10000];
+    int student_number;
+    cin >> student_number;
+
+    for (int i = 0; i < size; i++)
+    {
+        cin >> array[i];
+    }
+
     cout << endl;
     cout << endl;
-    cout << "Minimum number of pages = " << finding_my_Pages(arr, n, m) << endl;
+    cout << "Minimum number of pages = " << finding_my_Pages(array, size, student_number) << endl;
     cout << endl;
     cout << endl;
     return 0;
