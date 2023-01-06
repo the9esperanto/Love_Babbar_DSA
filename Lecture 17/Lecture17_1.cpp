@@ -1,6 +1,7 @@
 // Bubble Sort
 // The nth largest element will get to the correct position in nth round.
 // There will be n-1 rounds.
+// Bubble sort is a stable algorithm.
 
 #include <iostream>
 #include <iomanip>
