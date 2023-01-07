@@ -1,42 +1,62 @@
-// Pivot element in the sorted rotated array.
-// We are taking start = mid + 1 after checking that mid is greater than start, because we know that pivot element lies on the 2nd slope that is downward line so it cannot lie on the position the mid currently is as it is greater than 0 which means it is on the 1st line or upward slope.
+// // Search in a rotated sorted array.
+// // 7, 9, 1, 2, 3
 
-// Here, we are taking end = mid - 1 when the mid < array[0], because we know that the pivot element lies on the 2nd slope that is downward line so it can be at the position of the mid as well.
+// #include <iostream>
+// #include <iomanip>
+// using std::cin;
+// using std::cout;
+// using std::endl;
 
-#include <iostream>
-#include <iomanip>
-using std::cin;
-using std::cout;
-using std::endl;
+// void input(int array[], int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         cin >> array[i];
+//     }
+// }
 
-int getPivot(int array[], int size)
-{
+// // void output(int array[], int size)
 
-    int start = 0;
-    int end = size - 1;
-    int mid = start + ((end - start) / 2);
+// int element_finder(int array[], int size, int element)
+// {
+//     int start = 0;
+//     int end = size - 1;
+//     int mid = start + ((end - start) / 2);
 
-    while (start < end)
-    {
-        if (array[mid] >= array[0])
-        {
-            start = mid + 1;
-        }
-        else
-        {
-            end = mid;
-        }
-        mid = start + ((end - start) / 2);
-    }
-    return start;
-}
+//     while (start <= end)
+//     {
+//         if (mid == element)
+//         {
+//             return mid;
+//         }
+//         else if ((element > mid) && (element <= end))
+//         {
+//             start = mid + 1;
+//         }
+//         else if ((element < mid) && (element >= start))
+//         {
+//             end = mid - 1;
+//         }
+//     }
+//     return -1;
+// }
 
-int main()
-{
+// int main()
+// {
+//     int size;
+//     cout << "Enter the size of the array." << endl;
+//     cin >> size;
+//     int array[1000];
+//     cout << "Enter " << size << " elements to be stored in the array." << endl;
+//     input(array, size);
 
-    int arr[5] = {8, 10, 17, 1, 3};
+//     int element;
+//     cout << "Enter the element to be found in the array." << endl;
+//     cin >> element;
 
-    int answer = getPivot(arr, 5);
-    cout << "Pivot element is at the index " << answer << endl;
-    return 0;
-}
+//     int answer = element_finder(array, size, element);
+
+//     cout << "The element is at the " << answer << " position in the array" << endl;
+
+//     return 0;
+// }
