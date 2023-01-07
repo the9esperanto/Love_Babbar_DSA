@@ -32,7 +32,11 @@ int main()
 
     // Swapping the content of two queue of same types and may or may not be of different sizes.
     queue<int> a;
-    queue<int> b;
+    a.push(22);
+
+    a.swap(q);
+    cout << "The front element is " << q.front() << endl;
+    cout << "The back element is " << q.back() << endl;
 
     return 0;
 }
